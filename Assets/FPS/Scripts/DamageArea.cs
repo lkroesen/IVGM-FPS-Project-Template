@@ -8,6 +8,8 @@ public class DamageArea : MonoBehaviour
     [Tooltip("Damage multiplier over distance for area of effect")]
     public AnimationCurve damageRatioOverDistance;
 
+    [SerializeField] private bool _notFromEnemy = true;
+
     [Header("Debug")]
     [Tooltip("Color of the area of effect radius")]
     public Color areaOfEffectColor = Color.red * 0.5f;
@@ -33,7 +35,7 @@ public class DamageArea : MonoBehaviour
             CrystalLight crystalLight = coll.GetComponent<CrystalLight>();
             if (crystalLight)
             {
-                if (crystalLight.IsToggleLaser())
+                if (crystalLight.IsToggleLaser() && _notFromEnemy)
                 {
                     crystalLight.LightOn();
                 }
