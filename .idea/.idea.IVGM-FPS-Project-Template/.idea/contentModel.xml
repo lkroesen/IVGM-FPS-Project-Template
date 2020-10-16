@@ -162,6 +162,7 @@
             <e p="WeaponPickup.cs" t="Include" />
           </e>
         </e>
+        <e p="HallwayLights.cs" t="Include" />
         <e p="ReplaceCrystals.cs" t="Include" />
         <e p="TextMesh Pro" t="Include">
           <e p="Fonts" t="Include">

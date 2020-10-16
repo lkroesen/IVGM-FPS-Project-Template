@@ -9,13 +9,15 @@ public class CrystalLight : MonoBehaviour
     [SerializeField] private bool _alwaysOn = false;
     [Tooltip("Should the crystal stay on after being shot?")]
     [SerializeField] private bool _oneWayToggle = false;
+    [SerializeField] private bool _laserToggle = true;
     
     [Header("Light data")]
-    [Tooltip("Crystal off brightness")]
-    [SerializeField] private float _offBrightness= 0.07f;
+    [Tooltip("Crystal shader emission brightness when off")]
+    [SerializeField] private float _shaderOffBrightness= 0.07f;
+    [Tooltip("Crystal shader emission brightness when on")]
+    [SerializeField] private float _shaderOnBrightness = 1f;
 
-    [Tooltip("Crystal shine brightness")] [SerializeField]
-    private float _onBrightness = 1f;
+    [SerializeField] private float _crystalLightRange = 15f;
     [Tooltip("Crystal shine time")]
     [SerializeField] private float _waitTime = 5;
 
@@ -27,6 +29,7 @@ public class CrystalLight : MonoBehaviour
     {
         _light = GetComponent<Light>();
         _renderer = GetComponent<Renderer>();
+        _light.range = _crystalLightRange;
         
         if (_alwaysOn)
         {
@@ -36,7 +39,7 @@ public class CrystalLight : MonoBehaviour
         else
         {
             _light.enabled = false;
-            _renderer.material.SetFloat("_brightness", _offBrightness);
+            _renderer.material.SetFloat("_brightness", _shaderOffBrightness);
         }
     }
 
@@ -44,7 +47,7 @@ public class CrystalLight : MonoBehaviour
     public void LightOn()
     {
         _light.enabled = true;
-        _renderer.material.SetFloat("_brightness", _onBrightness);
+        _renderer.material.SetFloat("_brightness", _shaderOnBrightness);
         if (!_alwaysOn && !_oneWayToggle)
         {
             StartCoroutine(LightOff());
@@ -56,6 +59,11 @@ public class CrystalLight : MonoBehaviour
     {
         yield return new WaitForSeconds(_waitTime);
         _light.enabled = false;
-        _renderer.material.SetFloat("_brightness", _offBrightness);
+        _renderer.material.SetFloat("_brightness", _shaderOffBrightness);
+    }
+
+    public bool IsToggleLaser()
+    {
+        return _laserToggle;
     }
 }

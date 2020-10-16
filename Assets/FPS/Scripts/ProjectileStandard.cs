@@ -222,7 +222,10 @@ public class ProjectileStandard : MonoBehaviour
             CrystalLight crystalLight = collider.GetComponent<CrystalLight>();
             if (crystalLight)
             {
-                crystalLight.LightOn();
+                if (crystalLight.IsToggleLaser())
+                {
+                    crystalLight.LightOn();
+                }
             }
         }
 

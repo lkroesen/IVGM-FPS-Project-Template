@@ -33,7 +33,10 @@ public class DamageArea : MonoBehaviour
             CrystalLight crystalLight = coll.GetComponent<CrystalLight>();
             if (crystalLight)
             {
-                crystalLight.LightOn();
+                if (crystalLight.IsToggleLaser())
+                {
+                    crystalLight.LightOn();
+                }
             }
         }
 

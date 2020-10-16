@@ -76,7 +76,7 @@ Material:
     - _SrcBlend: 1
     - _UVSec: 0
     - _ZWrite: 1
-    - _brightness: 0.06
+    - _brightness: 0
     - _cubeIntensity: 0.65
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
