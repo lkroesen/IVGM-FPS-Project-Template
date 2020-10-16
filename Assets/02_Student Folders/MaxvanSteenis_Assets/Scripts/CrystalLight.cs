@@ -21,6 +21,7 @@ public class CrystalLight : MonoBehaviour
     [Tooltip("Crystal shine time")]
     [SerializeField] private float _waitTime = 5;
 
+    private bool _lightIsOn = false;
     private Light _light;
     private Renderer _renderer;
 
@@ -48,10 +49,11 @@ public class CrystalLight : MonoBehaviour
     {
         _light.enabled = true;
         _renderer.material.SetFloat("_brightness", _shaderOnBrightness);
-        if (!_alwaysOn && !_oneWayToggle)
+        if (!_alwaysOn && !_oneWayToggle && !_lightIsOn)
         {
             StartCoroutine(LightOff());
         }
+        _lightIsOn = true;
     }
     
     // After a certain wait time, the light is turned off again.
@@ -60,6 +62,7 @@ public class CrystalLight : MonoBehaviour
         yield return new WaitForSeconds(_waitTime);
         _light.enabled = false;
         _renderer.material.SetFloat("_brightness", _shaderOffBrightness);
+        _lightIsOn = false;
     }
 
     public bool IsToggleLaser()

@@ -25,20 +25,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="af5892e2-d94e-4601-9943-58db3ef4921a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.IVGM-FPS-Project-Template/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.IVGM-FPS-Project-Template/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.IVGM-FPS-Project-Template/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.IVGM-FPS-Project-Template/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.IVGM-FPS-Project-Template/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.IVGM-FPS-Project-Template/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/02_Student Folders/MaxvanSteenis_Assets/Art/Materials/Crystal.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/02_Student Folders/MaxvanSteenis_Assets/Art/Materials/Crystal.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/02_Student Folders/MaxvanSteenis_Assets/Art/Models/Cave_Level.blend" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/02_Student Folders/MaxvanSteenis_Assets/Art/Models/Cave_Level.blend" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/02_Student Folders/MaxvanSteenis_Assets/Art/Models/Cave_Level.blend.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/02_Student Folders/MaxvanSteenis_Assets/Art/Models/Cave_Level.blend.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/02_Student Folders/MaxvanSteenis_Assets/Art/Models/Cave_Level.blend1" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/02_Student Folders/MaxvanSteenis_Assets/Art/Models/Cave_Level.blend1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/02_Student Folders/MaxvanSteenis_Assets/Art/Models/Cave_Level.blend1.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/02_Student Folders/MaxvanSteenis_Assets/Art/Models/Cave_Level.blend1.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/02_Student Folders/MaxvanSteenis_Assets/MaxvanSteenis_Scene/MaxvanSteenis_Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/02_Student Folders/MaxvanSteenis_Assets/MaxvanSteenis_Scene/MaxvanSteenis_Scene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/02_Student Folders/MaxvanSteenis_Assets/Prefabs/Crystal.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/02_Student Folders/MaxvanSteenis_Assets/Prefabs/Crystal.prefab.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/02_Student Folders/MaxvanSteenis_Assets/Scripts/CrystalLight.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/02_Student Folders/MaxvanSteenis_Assets/Scripts/CrystalLight.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FPS/Scripts/DamageArea.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FPS/Scripts/DamageArea.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FPS/Scripts/ProjectileStandard.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FPS/Scripts/ProjectileStandard.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -56,10 +48,10 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Assets/ReplaceCrystals.cs" />
-        <option value="$PROJECT_DIR$/Assets/02_Student Folders/MaxvanSteenis_Assets/Scripts/CrystalLight.cs" />
         <option value="$PROJECT_DIR$/Assets/FPS/Scripts/DamageArea.cs" />
         <option value="$PROJECT_DIR$/Assets/FPS/Scripts/ProjectileStandard.cs" />
         <option value="$PROJECT_DIR$/Assets/HallwayLights.cs" />
+        <option value="$PROJECT_DIR$/Assets/02_Student Folders/MaxvanSteenis_Assets/Scripts/CrystalLight.cs" />
       </list>
     </option>
   </component>
@@ -105,6 +97,7 @@
       <workItem from="1602808736099" duration="3054000" />
       <workItem from="1602835151544" duration="554000" />
       <workItem from="1602835740384" duration="3790000" />
+      <workItem from="1602849621995" duration="1366000" />
     </task>
     <servers />
   </component>
