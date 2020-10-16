@@ -217,6 +217,13 @@ public class ProjectileStandard : MonoBehaviour
             {
                 damageable.InflictDamage(damage, false, m_ProjectileBase.owner);
             }
+            
+            // turn light on
+            CrystalLight crystalLight = collider.GetComponent<CrystalLight>();
+            if (crystalLight)
+            {
+                crystalLight.LightOn();
+            }
         }
 
         // impact vfx

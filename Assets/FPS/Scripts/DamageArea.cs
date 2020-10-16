@@ -29,6 +29,12 @@ public class DamageArea : MonoBehaviour
                     uniqueDamagedHealths.Add(health, damageable);
                 }
             }
+            
+            CrystalLight crystalLight = coll.GetComponent<CrystalLight>();
+            if (crystalLight)
+            {
+                crystalLight.LightOn();
+            }
         }
 
         // Apply damages with distance falloff

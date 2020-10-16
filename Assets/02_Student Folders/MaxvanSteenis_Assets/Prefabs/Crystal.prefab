@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8651028305000127294}
   - component: {fileID: 8651028305000127295}
   - component: {fileID: 8651028305000127291}
+  - component: {fileID: -8964045591087584399}
   m_Layer: 0
   m_Name: Crystal
   m_TagString: Untagged
@@ -154,3 +155,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6ab6a09dfc39304cb300c07170a4d71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _alwaysOn: 0
+  _oneWayToggle: 0
+  _offBrightness: 0.07
+  _onBrightness: 1
+  _waitTime: 5
+--- !u!64 &-8964045591087584399
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8651028305000127264}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4702925393065980420, guid: 8ee9a8692a5999141843b8662ef4f06b, type: 3}
