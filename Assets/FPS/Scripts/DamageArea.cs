@@ -40,6 +40,12 @@ public class DamageArea : MonoBehaviour
                     crystalLight.LightOn();
                 }
             }
+
+            if (coll.CompareTag("Destructible"))
+            {
+                Debug.Log("Rocks shot");
+                Destroy(coll.gameObject);
+            }
         }
 
         // Apply damages with distance falloff

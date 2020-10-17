@@ -36,6 +36,7 @@
               <e p="CrystalLight.cs" t="Include" />
               <e p="HallwayLights.cs" t="Include" />
               <e p="ReplaceCrystals.cs" t="Include" />
+              <e p="RockAmbush.cs" t="Include" />
             </e>
           </e>
         </e>
@@ -164,6 +165,7 @@
             <e p="WeaponPickup.cs" t="Include" />
           </e>
         </e>
+        <e p="PillarDrop.cs" t="Include" />
         <e p="TextMesh Pro" t="Include">
           <e p="Fonts" t="Include">
             <e p="LiberationSans - OFL.txt" t="Include" />
