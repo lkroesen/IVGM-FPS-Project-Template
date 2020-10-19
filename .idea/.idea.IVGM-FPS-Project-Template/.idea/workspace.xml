@@ -24,18 +24,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="af5892e2-d94e-4601-9943-58db3ef4921a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.IVGM-FPS-Project-Template/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.IVGM-FPS-Project-Template/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.IVGM-FPS-Project-Template/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.IVGM-FPS-Project-Template/.idea/indexLayout.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.IVGM-FPS-Project-Template/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.IVGM-FPS-Project-Template/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/02_Student Folders/MaxvanSteenis_Assets/Art/Models/Cave_Level.blend" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/02_Student Folders/MaxvanSteenis_Assets/Art/Models/Cave_Level.blend" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/02_Student Folders/MaxvanSteenis_Assets/Art/Models/Cave_Level.blend1" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/02_Student Folders/MaxvanSteenis_Assets/Art/Models/Cave_Level.blend1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/02_Student Folders/MaxvanSteenis_Assets/MaxvanSteenis_Scene/MaxvanSteenis_Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/02_Student Folders/MaxvanSteenis_Assets/MaxvanSteenis_Scene/MaxvanSteenis_Scene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/02_Student Folders/MaxvanSteenis_Assets/MaxvanSteenis_Scene/MaxvanSteenis_Scene/NavMesh.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/02_Student Folders/MaxvanSteenis_Assets/MaxvanSteenis_Scene/MaxvanSteenis_Scene/NavMesh.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FPS/Scripts/DamageArea.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FPS/Scripts/DamageArea.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FPS/Scripts/UI/CompassElement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FPS/Scripts/UI/CompassElement.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
-    </list>
+    <list default="true" id="af5892e2-d94e-4601-9943-58db3ef4921a" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -105,6 +94,7 @@
       <workItem from="1602854822720" duration="1431000" />
       <workItem from="1602920915598" duration="598000" />
       <workItem from="1602930935599" duration="5936000" />
+      <workItem from="1603032141367" duration="147000" />
     </task>
     <servers />
   </component>
