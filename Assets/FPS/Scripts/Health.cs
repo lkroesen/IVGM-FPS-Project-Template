@@ -19,7 +19,7 @@ public class Health : MonoBehaviour
     public float getRatio() => currentHealth / maxHealth;
     public bool isCritical() => getRatio() <= criticalHealthRatio;
 
-    bool m_IsDead;
+    public bool m_IsDead;
 
     private void Start()
     {
@@ -76,13 +76,6 @@ public class Health : MonoBehaviour
     {
         if (m_IsDead)
             return;
-
-        Tree tree = transform.GetComponent<Tree>();
-        if (tree)
-        {
-            tree.destroy();
-            return;
-        }
 
         // call OnDie action
         if (currentHealth <= 0f)

@@ -3,28 +3,36 @@ using UnityEngine.SceneManagement;
 
 public class GameFlowManager : MonoBehaviour
 {
-    // This GameFlowManager has been edited to play levels from build settings in sequence, or return to the main menu.
-    // DO NOT CHANGE THIS SCRIPT! You may customise the audio and message prefabs it refers to, if you want.
-
     [Header("Parameters")]
-    private float endSceneLoadDelay = 3f;
+    [Tooltip("Duration of the fade-to-black at the end of the game")]
+    public float endSceneLoadDelay = 3f;
     [Tooltip("The canvas group of the fade-to-black screen")]
     public CanvasGroup endGameFadeCanvasGroup;
-    private float delayBeforeFadeToBlack = 4f;
-    private float delayBeforeWinMessage = 2f;
-    [Tooltip("The audio clip played upon win")]
+
+    [Header("Win")]
+    [Tooltip("This string has to be the name of the scene you want to load when winning")]
+    public string winSceneName = "WinScene";
+    [Tooltip("Duration of delay before the fade-to-black, if winning")]
+    public float delayBeforeFadeToBlack = 4f;
+    [Tooltip("Duration of delay before the win message")]
+    public float delayBeforeWinMessage = 2f;
+    [Tooltip("Sound played on win")]
     public AudioClip victorySound;
-    [Tooltip("The message to be shown on win")]
+    [Tooltip("Prefab for the win game message")]
     public GameObject WinGameMessagePrefab;
 
+    [Header("Lose")]
+    [Tooltip("This string has to be the name of the scene you want to load when losing")]
+    public string loseSceneName = "LoseScene";
+
+
     public bool gameIsEnding { get; private set; }
-    public bool ReplayScene = false;
-    int nextSceneIndex;
 
     PlayerCharacterController m_Player;
     NotificationHUDManager m_NotificationHUDManager;
     ObjectiveManager m_ObjectiveManager;
     float m_TimeLoadEndGameScene;
+    string m_SceneToLoad;
 
     void Start()
     {
@@ -49,7 +57,7 @@ public class GameFlowManager : MonoBehaviour
             // See if it's time to load the end scene (after the delay)
             if (Time.time >= m_TimeLoadEndGameScene)
             {
-                SceneManager.LoadScene(nextSceneIndex);
+                SceneManager.LoadScene(m_SceneToLoad);
                 gameIsEnding = false;
             }
         }
@@ -75,20 +83,7 @@ public class GameFlowManager : MonoBehaviour
         endGameFadeCanvasGroup.gameObject.SetActive(true);
         if (win)
         {
-            // Set next scene to play next in build settings. Set to main menu if all levels finished.
-            // If Replay Level is checked, level won't advance. Used for testing.
-            if (!ReplayScene)
-            {
-                nextSceneIndex = SceneManager.GetActiveScene().buildIndex + 1;
-                if (nextSceneIndex > SceneManager.sceneCountInBuildSettings - 1)
-                {
-                    Debug.Log("Index " + nextSceneIndex + " is out of bounds. Returning to Main Menu.");
-                    nextSceneIndex = 0;
-                }
-            } else {
-                nextSceneIndex = SceneManager.GetActiveScene().buildIndex;
-            }
-
+            m_SceneToLoad = winSceneName;
             m_TimeLoadEndGameScene = Time.time + endSceneLoadDelay + delayBeforeFadeToBlack;
 
             // play a sound on win
@@ -108,9 +103,7 @@ public class GameFlowManager : MonoBehaviour
         }
         else
         {
-            // Set next scene to load to replay active scene
-            nextSceneIndex = SceneManager.GetActiveScene().buildIndex;
-
+            m_SceneToLoad = loseSceneName;
             m_TimeLoadEndGameScene = Time.time + endSceneLoadDelay;
         }
     }

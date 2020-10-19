@@ -34,6 +34,7 @@ public class PlayerCharacterController : MonoBehaviour
     public float sprintSpeedModifier = 2f;
     [Tooltip("Height at which the player dies instantly when falling off the map")]
     public float killHeight = -50f;
+   
 
     [Header("Rotation")]
     [Tooltip("Rotation speed for moving the camera")]
@@ -81,6 +82,8 @@ public class PlayerCharacterController : MonoBehaviour
     public float fallDamageAtMinSpeed = 10f;
     [Tooltip("Damage recieved when falling at the maximum speed")]
     public float fallDamageAtMaxSpeed = 50f;
+
+    public float decreaseSpeed = 0.5f;
 
     public UnityAction<bool> onStanceChanged;
 
@@ -271,6 +274,7 @@ public class PlayerCharacterController : MonoBehaviour
             {
                 // calculate the desired velocity from inputs, max speed, and current slope
                 Vector3 targetVelocity = worldspaceMoveInput * maxSpeedOnGround * speedModifier;
+               
                 // reduce speed if crouching by crouch speed ratio
                 if (isCrouching)
                     targetVelocity *= maxSpeedCrouchedRatio;
