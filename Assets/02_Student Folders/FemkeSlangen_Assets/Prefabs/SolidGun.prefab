@@ -165,7 +165,7 @@ MonoBehaviour:
   aimOffset: {x: 0, y: 0.13, z: 0}
   ammoReloadRate: 1.1
   ammoReloadDelay: 1
-  maxAmmo: 4
+  maxAmmo: 10
   automaticReleaseOnCharged: 0
   maxChargeDuration: 1
   ammoUsedOnStartCharge: 0
