@@ -21,6 +21,9 @@ public class DecreaseOverTime : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // Turns sprinting off due to desert heat
+        MyCharacter.sprintSpeedModifier = 1f;
+
         // Decreases the movement speed over time
         MyCharacter.maxSpeedInAir -= Time.deltaTime * decreaseSpeed;
 
