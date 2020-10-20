@@ -9,8 +9,6 @@ public class CompanionBehaviour : MonoBehaviour
     [SerializeField] private GameObject _packLeader;
     [SerializeField] private float _minFollowDistance = 3;
 
-    private float _currentMinDistance;
-
     private NavMeshAgent _agent;
     private Transform _currentTarget;
 
@@ -18,20 +16,19 @@ public class CompanionBehaviour : MonoBehaviour
     void Start()
     {
         _agent = GetComponent<NavMeshAgent>();
-        Follow();
     }
 
     // Update is called once per frame
     void Update()
     {
-        Move();
+        Follow();
     }
 
-    private void Move()
+    private void Move(Transform target, float minDistance)
     {
-        if (Vector3.Distance(transform.position, _currentTarget.position) > _currentMinDistance)
+        if (Vector3.Distance(transform.position, target.position) > minDistance)
         {
-            _agent.SetDestination(_currentTarget.position);
+            _agent.SetDestination(target.position);
         }
 
         else
@@ -42,7 +39,6 @@ public class CompanionBehaviour : MonoBehaviour
 
     private void Follow()
     {
-        _currentTarget = _packLeader.transform;
-        _currentMinDistance = _minFollowDistance;
+        Move(_packLeader.transform, _minFollowDistance);
     }
 }

@@ -1,10 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:upstream" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="d937f333-cd32-445e-aad4-66eb347c63b8" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.IVGM-FPS-Project-Template/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.IVGM-FPS-Project-Template/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.IVGM-FPS-Project-Template/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.IVGM-FPS-Project-Template/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/02_Student Folders/ArwenHutzezon_Assets/ArwenHutzezon_Scene/ArwenHutzezon_Scene.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/02_Student Folders/ArwenHutzezon_Assets/ArwenHutzezon_Scene/ArwenHutzezon_Scene.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/02_Student Folders/ArwenHutzezon_Assets/ArwenHutzezon_Scene/ArwenHutzezon_Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/02_Student Folders/ArwenHutzezon_Assets/ArwenHutzezon_Scene/ArwenHutzezon_Scene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/02_Student Folders/ArwenHutzezon_Assets/ArwenHutzezon_Scene/ArwenHutzezon_Scene/NavMesh.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/02_Student Folders/ArwenHutzezon_Assets/ArwenHutzezon_Scene/ArwenHutzezon_Scene/NavMesh.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/02_Student Folders/ArwenHutzezon_Assets/ArwenHutzezon_Scene/ArwenHutzezon_Scene/NavMesh.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/02_Student Folders/ArwenHutzezon_Assets/ArwenHutzezon_Scene/ArwenHutzezon_Scene/NavMesh.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/02_Student Folders/ArwenHutzezon_Assets/ArwenHutzezon_Scene/NavMesh-Cube.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/02_Student Folders/ArwenHutzezon_Assets/ArwenHutzezon_Scene/NavMesh-Cube.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/02_Student Folders/ArwenHutzezon_Assets/ArwenHutzezon_Scene/NavMesh.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/02_Student Folders/ArwenHutzezon_Assets/ArwenHutzezon_Scene/NavMesh.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/02_Student Folders/ArwenHutzezon_Assets/ArwenHutzezon_Scene/placeholder.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/02_Student Folders/ArwenHutzezon_Assets/ArwenHutzezon_Scene/placeholder.md.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/02_Student Folders/ArwenHutzezon_Assets/Scripts/CompanionBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/02_Student Folders/ArwenHutzezon_Assets/Scripts/CompanionBehaviour.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FPS/Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FPS/Prefabs/Player.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FPS/Scripts/Jetpack.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FPS/Scripts/Jetpack.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FPS/Scripts/PlayerCharacterController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FPS/Scripts/PlayerCharacterController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/NavMeshAreas.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/NavMeshAreas.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -15,10 +52,17 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/JumpPad.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Assets/02_Student Folders/ArwenHutzezon_Assets/Scripts/CompanionBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/FallenThroughWater.cs" />
+        <option value="$PROJECT_DIR$/Assets/FPS/Scripts/PlayerCharacterController.cs" />
+        <option value="$PROJECT_DIR$/Assets/JumpPad.cs" />
+        <option value="$PROJECT_DIR$/Assets/FPS/Scripts/Jetpack.cs" />
       </list>
     </option>
   </component>
@@ -61,6 +105,7 @@
       <option name="presentableId" value="Default" />
       <updated>1603127499459</updated>
       <workItem from="1603127513165" duration="711000" />
+      <workItem from="1603215758350" duration="4744000" />
     </task>
     <servers />
   </component>
@@ -69,6 +114,17 @@
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>

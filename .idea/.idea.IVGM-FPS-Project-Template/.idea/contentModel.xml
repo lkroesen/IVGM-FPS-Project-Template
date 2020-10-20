@@ -15,6 +15,7 @@
           <e p="ArwenHutzezon_Assets" t="Include">
             <e p="Scripts" t="Include">
               <e p="CompanionBehaviour.cs" t="Include" />
+              <e p="FallenThroughWater.cs" t="Include" />
             </e>
           </e>
         </e>
@@ -148,6 +149,7 @@
             <e p="WeaponPickup.cs" t="Include" />
           </e>
         </e>
+        <e p="JumpPad.cs" t="Include" />
         <e p="TextMesh Pro" t="Include">
           <e p="Fonts" t="Include">
             <e p="LiberationSans - OFL.txt" t="Include" />
