@@ -113,7 +113,7 @@ MonoBehaviour:
   _laserToggle: 1
   _shaderOffBrightness: 0.07
   _shaderOnBrightness: 1
-  _crystalLightRange: 15
+  _crystalLightRange: 25
   _waitTime: 5
 --- !u!108 &7155732252669552783
 Light:
