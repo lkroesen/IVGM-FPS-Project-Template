@@ -24,6 +24,8 @@ public class Jetpack : MonoBehaviour
     public float consumeDuration = 1.5f;
     [Tooltip("Time it takes to completely refill the jetpack while on the ground")]
     public float refillDurationGrounded = 2f;
+
+    [SerializeField] private bool _canRefillInTheAir = true;
     [Tooltip("Time it takes to completely refill the jetpack while in the air")]
     public float refillDurationInTheAir = 5f;
     [Tooltip("Delay after last use before starting to refill")]
@@ -112,8 +114,21 @@ public class Jetpack : MonoBehaviour
             // refill the meter over time
             if (isJetpackUnlocked && Time.time - m_LastTimeOfUse >= refillDelay)
             {
-                float refillRate = 1 / (m_PlayerCharacterController.isGrounded ? refillDurationGrounded : refillDurationInTheAir);
-                currentFillRatio = currentFillRatio + Time.deltaTime * refillRate;
+                if (_canRefillInTheAir)
+                {
+                    float refillRate = 1 / (m_PlayerCharacterController.isGrounded ? 
+                        refillDurationGrounded : refillDurationInTheAir);
+                    currentFillRatio = currentFillRatio + Time.deltaTime * refillRate;
+                }
+
+                else
+                {
+                    {
+                        float refillRate = m_PlayerCharacterController.isGrounded ? 1 / refillDurationGrounded : 0;
+                        currentFillRatio = currentFillRatio + Time.deltaTime * refillRate;
+                    }
+                }
+                
             }
 
             for (int i = 0; i < jetpackVfx.Length; i++)

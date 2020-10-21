@@ -12,6 +12,22 @@
           <e p="LoadOrderManager.cs" t="Include" />
         </e>
         <e p="02_Student Folders" t="Include">
+          <e p="ArwenHutzezon_Assets" t="Include">
+            <e p="Scripts" t="Include">
+              <e p="CompanionBehaviour.cs" t="Include" />
+              <e p="FallenThroughWater.cs" t="Include" />
+              <e p="ObjectiveCompanionReachPoint.cs" t="Include" />
+              <e p="PlayerWatchData.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="BirdBot.cs" t="Include" />
+        <e p="BrokenVector" t="Include">
+          <e p="LowPolyTreePack" t="Include">
+            <e p="README.txt" t="Include" />
+          </e>
+        </e>
+        <e p="Bush.cs" t="Include" />
           <e p="LucaStoffels_Assets" t="Include">
             <e p="Scripts" t="Include">
               <e p="FallDeath.cs" t="Include" />
@@ -165,6 +181,11 @@
             <e p="WeaponPickup.cs" t="Include" />
           </e>
         </e>
+        <e p="JumpPad.cs" t="Include" />
+        <e p="JumpUpgradePickup.cs" t="Include" />
+        <e p="ObjectiveUnlocker.cs" t="Include" />
+        <e p="SecretPassage.cs" t="Include" />
+        <e p="TestScript.cs" t="Include" />
         <e p="PillarDrop.cs" t="Include" />
         <e p="TextMesh Pro" t="Include">
           <e p="Fonts" t="Include">

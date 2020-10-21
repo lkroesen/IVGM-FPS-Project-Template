@@ -439,4 +439,21 @@ public class PlayerCharacterController : MonoBehaviour
         isCrouching = crouched;
         return true;
     }
+
+    public void SimulateJump(float upwardsForce)
+    {
+        // start by canceling out the vertical component of our velocity
+        characterVelocity = new Vector3(characterVelocity.x, 0f, characterVelocity.z);
+
+        // then, add the jumpSpeed value upwards
+        characterVelocity += Vector3.up * upwardsForce;
+
+        // remember last time we jumped because we need to prevent snapping to ground for a short time
+        m_LastTimeJumped = Time.time;
+        hasJumpedThisFrame = true;
+
+        // Force grounding to false
+        isGrounded = false;
+        m_GroundNormal = Vector3.up;
+    }
 }
