@@ -43,6 +43,21 @@ public class ObjectiveCompanionReachPoint : MonoBehaviour
             // destroy the transform, will remove the compass marker if it has one
             Destroy(destroyRoot.gameObject);
         }
+        
+        else if (other.GetComponent<BirdBot>())
+        {
+            m_Objective.CompleteObjective(string.Empty, string.Empty, "Objective complete : " + m_Objective.title);
+
+            other.GetComponent<BirdBot>().SetStateToFollow();
+
+            if (GetComponentInParent<ObjectiveUnlocker>())
+            {
+                GetComponentInParent<ObjectiveUnlocker>().ObjectiveCompleted(_index);
+            }
+
+            // destroy the transform, will remove the compass marker if it has one
+            Destroy(destroyRoot.gameObject);
+        }
     }
 
     public int GetIndex()

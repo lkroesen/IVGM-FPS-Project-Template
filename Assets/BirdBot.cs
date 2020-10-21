@@ -18,6 +18,8 @@ public class BirdBot : MonoBehaviour
     [SerializeField] private float _minFlightHeight;
     [SerializeField] private PlayerWatchData _watchData;
 
+    private Transform _target;
+
     private BirdState _birdState;
 
     private void Start()
@@ -33,10 +35,12 @@ public class BirdBot : MonoBehaviour
         {
             Follow();
         }
-
-        else
+        
+        else if (_birdState == BirdState.Targeted)
         {
-            Point();
+            transform.position = Vector3.MoveTowards(transform.position, _target.position,
+                Time.deltaTime * _speed);
+            transform.LookAt(new Vector3(_target.position.x, transform.position.y, _target.position.z));
         }
     }
 
@@ -59,21 +63,24 @@ public class BirdBot : MonoBehaviour
         {
             transform.position = Vector3.MoveTowards(transform.position, transform.position, Time.deltaTime * _speed);
         }
+        
+        transform.LookAt(new Vector3(_player.position.x, transform.position.y, _player.position.z));
     }
 
     void Point()
     {
-        (GameObject hitCollider, Transform colliderTransform, float distance) = _watchData.GetRaycast();
-        ObjectiveCompanionReachPoint _objective = hitCollider.GetComponent<ObjectiveCompanionReachPoint>();
-        if (_objective && colliderTransform.position.y > _minHeight)
+        (GameObject hit, Transform potentialTarget, float distance) = _watchData.GetRaycast();
+        Debug.Log("Potential target: " + potentialTarget);
+        ObjectiveCompanionReachPoint _objective = hit.GetComponent<ObjectiveCompanionReachPoint>();
+        if (_objective && potentialTarget.position.y > _minHeight)
         {
-            Debug.Log("Destination: " + colliderTransform.position);
-            transform.position = Vector3.MoveTowards(transform.position, colliderTransform.position,
-                Time.deltaTime * _speed);
+            Debug.Log(string.Format("Destination: {0}", potentialTarget.position));
+            _target = potentialTarget;
         }
 
         else
         {
+            Debug.Log("No prey");
             _birdState = BirdState.Follow;
         }
     }
@@ -85,6 +92,7 @@ public class BirdBot : MonoBehaviour
             if (_birdState == BirdState.Follow)
             {
                 _birdState = BirdState.Targeted;
+                Point();
             }
 
             else
@@ -92,5 +100,10 @@ public class BirdBot : MonoBehaviour
                 _birdState = BirdState.Follow;
             }
         }
+    }
+
+    public void SetStateToFollow()
+    {
+        _birdState = BirdState.Follow;
     }
 }

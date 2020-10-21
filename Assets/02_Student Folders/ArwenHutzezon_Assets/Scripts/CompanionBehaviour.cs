@@ -73,18 +73,15 @@ public class CompanionBehaviour : MonoBehaviour
             (GameObject hit, Transform potentialTarget, float touchDistance) = playerWatchData.GetRaycast();
             if (hit.GetComponent<ObjectiveCompanionReachPoint>())
             {
-                Debug.Log(hit.transform);
                 _currentTarget = potentialTarget;
                 _interactionDistance = touchDistance;
                 Move(potentialTarget, touchDistance);
-                return;
             }
 
             else
             {
                 Debug.Log(string.Format("Hit missed. Reason: {0} {1} {2}", hit, hit.GetComponent<ObjectiveCompanionReachPoint>(), potentialTarget));
                 _petState = PetState.Follow;
-                return;
             }
         }
 

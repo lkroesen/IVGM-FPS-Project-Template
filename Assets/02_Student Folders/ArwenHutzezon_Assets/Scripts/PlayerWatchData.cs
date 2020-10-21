@@ -11,6 +11,10 @@ public class PlayerWatchData : MonoBehaviour
         if (Physics.Raycast(transform.position, transform.forward, out hit, Mathf.Infinity))
         {
             Debug.DrawRay(transform.position, transform.forward * hit.distance);
+            if (hit.collider.gameObject.GetComponent<ObjectiveCompanionReachPoint>())
+            {
+                Debug.DrawRay(transform.position, transform.forward * hit.distance, Color.red);
+            }
         }
     }
     public (GameObject, Transform, float) GetRaycast()
@@ -19,13 +23,14 @@ public class PlayerWatchData : MonoBehaviour
         // Does the ray intersect any objects excluding the player layer
         if (Physics.Raycast(transform.position, transform.forward, out hit, Mathf.Infinity))
         {
-            Debug.DrawRay(transform.position, transform.forward * hit.distance, Color.red);
+            Debug.Log(transform);
             return (hit.collider.gameObject, hit.transform, 0);
         }
 
         else
         {
-            return (hit.collider.gameObject, transform, 3);
+            Debug.Log("What even?");
+            return (transform.gameObject, transform, 3);
         }
     }
 

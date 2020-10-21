@@ -25,11 +25,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d937f333-cd32-445e-aad4-66eb347c63b8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.IVGM-FPS-Project-Template/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.IVGM-FPS-Project-Template/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.IVGM-FPS-Project-Template/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.IVGM-FPS-Project-Template/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.IVGM-FPS-Project-Template/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.IVGM-FPS-Project-Template/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/02_Student Folders/ArwenHutzezon_Assets/ArwenHutzezon_Scene/ArwenHutzezon_Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/02_Student Folders/ArwenHutzezon_Assets/ArwenHutzezon_Scene/ArwenHutzezon_Scene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/02_Student Folders/ArwenHutzezon_Assets/Scripts/CompanionBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/02_Student Folders/ArwenHutzezon_Assets/Scripts/CompanionBehaviour.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/02_Student Folders/ArwenHutzezon_Assets/Scripts/ObjectiveCompanionReachPoint.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/02_Student Folders/ArwenHutzezon_Assets/Scripts/ObjectiveCompanionReachPoint.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/02_Student Folders/ArwenHutzezon_Assets/Scripts/PlayerWatchData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/02_Student Folders/ArwenHutzezon_Assets/Scripts/PlayerWatchData.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BirdBot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/BirdBot.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,9 +60,9 @@
         <option value="$PROJECT_DIR$/Assets/ObjectiveUnlocker.cs" />
         <option value="$PROJECT_DIR$/Assets/SecretPassage.cs" />
         <option value="$PROJECT_DIR$/Assets/CompanionManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/02_Student Folders/ArwenHutzezon_Assets/Scripts/ObjectiveCompanionReachPoint.cs" />
-        <option value="$PROJECT_DIR$/Assets/02_Student Folders/ArwenHutzezon_Assets/Scripts/CompanionBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/02_Student Folders/ArwenHutzezon_Assets/Scripts/PlayerWatchData.cs" />
+        <option value="$PROJECT_DIR$/Assets/02_Student Folders/ArwenHutzezon_Assets/Scripts/CompanionBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/02_Student Folders/ArwenHutzezon_Assets/Scripts/ObjectiveCompanionReachPoint.cs" />
         <option value="$PROJECT_DIR$/Assets/BirdBot.cs" />
       </list>
     </option>
@@ -108,7 +109,7 @@
       <workItem from="1603127513165" duration="711000" />
       <workItem from="1603215758350" duration="18614000" />
       <workItem from="1603250054976" duration="9439000" />
-      <workItem from="1603260419389" duration="14348000" />
+      <workItem from="1603260419389" duration="17722000" />
     </task>
     <servers />
   </component>
