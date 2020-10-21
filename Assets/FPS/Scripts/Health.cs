@@ -19,7 +19,7 @@ public class Health : MonoBehaviour
     public float getRatio() => currentHealth / maxHealth;
     public bool isCritical() => getRatio() <= criticalHealthRatio;
 
-    bool m_IsDead;
+    public bool m_IsDead;
 
     private void Start()
     {
