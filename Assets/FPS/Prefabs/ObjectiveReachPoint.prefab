@@ -109,10 +109,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7535462baa2ed0d469f708cbe145b720, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  title: Reach the area
+  title: Reach the end of the trials
   description: 
   isOptional: 1
-  delayVisible: 6
+  delayVisible: 1
 --- !u!114 &2707800222142829376
 MonoBehaviour:
   m_ObjectHideFlags: 0

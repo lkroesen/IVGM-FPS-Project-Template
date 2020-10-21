@@ -8,4 +8,19 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/01_Menu/MainMenuScene.unity
     guid: 0ffac6132adb54714954003a60f4f424
+  - enabled: 1
+    path: Assets/02_Student Folders/LucaStoffels_Assets/LucaStoffels_Scene/LucaStoffels_Scene.unity
+    guid: 4a97593dee9c355429e4d0462b3519e0
+  - enabled: 1
+    path: Assets/02_Student Folders/BenjaminHaaksma_Assets 1/BenjaminScene.unity
+    guid: 198952e9e4b2ec5438e249695efe53c0
+  - enabled: 1
+    path: Assets/02_Student Folders/LaurensKroesen_Assets/FirstnameLastname_Scene/Level.unity
+    guid: 07c355a40efadf243925f4db4de4de3f
+  - enabled: 1
+    path: Assets/02_Student Folders/RobinSmit_Assets/RobinSmit_Scene.unity
+    guid: 47c5a767b53681043946155abc41e091
+  - enabled: 1
+    path: Assets/02_Student Folders/FemkeSlangen_Assets/FemkeSlangen_Scene/FemkeSlangen_Scene.unity
+    guid: 92a974e47cb5c5349ac34f942827af5e
   m_configObjects: {}

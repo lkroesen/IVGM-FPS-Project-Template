@@ -411,6 +411,11 @@ InputManager:
     descriptiveNegativeName: 
     negativeButton: 
     positiveButton: r
+    m_Name: BLINK
+    descriptiveName: 
+    descriptiveNegativeName: 
+    negativeButton: 
+    positiveButton: e
     altNegativeButton: 
     altPositiveButton: joystick button 1
     gravity: 1000

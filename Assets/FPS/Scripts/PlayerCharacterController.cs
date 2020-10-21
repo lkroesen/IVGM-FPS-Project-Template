@@ -145,6 +145,12 @@ public class PlayerCharacterController : MonoBehaviour
         UpdateCharacterHeight(true);
     }
 
+    public void SetGravity(float newgravity, float jumppower)
+    {
+        gravityDownForce = newgravity;
+        jumpForce = jumppower;
+    }
+
     void Update()
     {
         // check for Y kill
