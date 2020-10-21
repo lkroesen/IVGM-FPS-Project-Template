@@ -277,6 +277,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 1
   criticalHealthRatio: 0.3
+  m_IsDead: 0
 --- !u!114 &3464315327790461765
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -290,7 +291,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: {fileID: 6370966072896210225}
-  healthBarImage: {fileID: 0}
+  healthBarImage: {fileID: 2216117388753714053, guid: de0ef78aa1a332947b98842d9a9b4676,
+    type: 3}
   healthBarPivot: {fileID: 1695247527468583575}
   hideFullHealthBar: 1
 --- !u!114 &4234830436940505133
