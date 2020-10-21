@@ -22,6 +22,7 @@
     <explicitExcludes>
       <Path>.git</Path>
       <Path>.idea</Path>
+      <Path>Blender_Models</Path>
       <Path>Library</Path>
       <Path>Temp</Path>
       <Path>Tutorial Defaults</Path>

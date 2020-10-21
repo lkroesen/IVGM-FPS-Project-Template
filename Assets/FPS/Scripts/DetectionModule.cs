@@ -1,4 +1,5 @@
-﻿using System.Linq;
+﻿using System;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -34,6 +35,12 @@ public class DetectionModule : MonoBehaviour
     {
         m_ActorsManager = FindObjectOfType<ActorsManager>();
         DebugUtility.HandleErrorIfNullFindObject<ActorsManager, DetectionModule>(m_ActorsManager, this);
+    }
+
+    private void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(transform.position, detectionRange);
     }
 
     public virtual void HandleTargetDetection(Actor actor, Collider[] selfColliders)

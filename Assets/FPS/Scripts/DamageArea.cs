@@ -8,6 +8,8 @@ public class DamageArea : MonoBehaviour
     [Tooltip("Damage multiplier over distance for area of effect")]
     public AnimationCurve damageRatioOverDistance;
 
+    [SerializeField] private bool _notFromEnemy = true;
+
     [Header("Debug")]
     [Tooltip("Color of the area of effect radius")]
     public Color areaOfEffectColor = Color.red * 0.5f;
@@ -28,6 +30,21 @@ public class DamageArea : MonoBehaviour
                 {
                     uniqueDamagedHealths.Add(health, damageable);
                 }
+            }
+            
+            CrystalLight crystalLight = coll.GetComponent<CrystalLight>();
+            if (crystalLight)
+            {
+                if (crystalLight.IsToggleLaser() && _notFromEnemy)
+                {
+                    crystalLight.LightOn();
+                }
+            }
+
+            if (coll.CompareTag("Destructible"))
+            {
+                Debug.Log("Rocks shot");
+                Destroy(coll.gameObject);
             }
         }
 
