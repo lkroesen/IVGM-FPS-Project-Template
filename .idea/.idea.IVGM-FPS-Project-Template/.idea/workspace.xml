@@ -25,12 +25,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d937f333-cd32-445e-aad4-66eb347c63b8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.IVGM-FPS-Project-Template/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.IVGM-FPS-Project-Template/.idea/indexLayout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.IVGM-FPS-Project-Template/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.IVGM-FPS-Project-Template/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.IVGM-FPS-Project-Template/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.IVGM-FPS-Project-Template/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/02_Student Folders/ArwenHutzezon_Assets/ArwenHutzezon_Scene/ArwenHutzezon_Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/02_Student Folders/ArwenHutzezon_Assets/ArwenHutzezon_Scene/ArwenHutzezon_Scene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/02_Student Folders/ArwenHutzezon_Assets/Scripts/CompanionBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/02_Student Folders/ArwenHutzezon_Assets/Scripts/CompanionBehaviour.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/02_Student Folders/ArwenHutzezon_Assets/Scripts/ObjectiveCompanionReachPoint.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/02_Student Folders/ArwenHutzezon_Assets/Scripts/ObjectiveCompanionReachPoint.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/02_Student Folders/ArwenHutzezon_Assets/Scripts/PlayerWatchData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/02_Student Folders/ArwenHutzezon_Assets/Scripts/PlayerWatchData.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/BirdBot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/BirdBot.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/02_Student Folders/ArwenHutzezon_Assets/Scripts/FallenThroughWater.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/02_Student Folders/ArwenHutzezon_Assets/Scripts/FallenThroughWater.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FPS/Art/Materials/ObjectiveReachPoint.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FPS/Art/Materials/ObjectiveReachPoint.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ObjectiveUnlocker.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ObjectiveUnlocker.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/NavMeshAreas.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/NavMeshAreas.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +46,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/ObjectiveUnlocker.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/JumpPad.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/SecretPassage.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/JumpUpgradePickup.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/02_Student Folders/ArwenHutzezon_Assets/Scripts/PlayerWatchData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/02_Student Folders/ArwenHutzezon_Assets/Scripts/ObjectiveCompanionReachPoint.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -57,13 +60,17 @@
         <option value="$PROJECT_DIR$/Assets/FPS/Scripts/UI/CrosshairManager.cs" />
         <option value="$PROJECT_DIR$/Assets/FPS/Scripts/WeaponController.cs" />
         <option value="$PROJECT_DIR$/Assets/TestScript.cs" />
-        <option value="$PROJECT_DIR$/Assets/ObjectiveUnlocker.cs" />
         <option value="$PROJECT_DIR$/Assets/SecretPassage.cs" />
         <option value="$PROJECT_DIR$/Assets/CompanionManager.cs" />
         <option value="$PROJECT_DIR$/Assets/02_Student Folders/ArwenHutzezon_Assets/Scripts/PlayerWatchData.cs" />
-        <option value="$PROJECT_DIR$/Assets/02_Student Folders/ArwenHutzezon_Assets/Scripts/CompanionBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/02_Student Folders/ArwenHutzezon_Assets/Scripts/ObjectiveCompanionReachPoint.cs" />
         <option value="$PROJECT_DIR$/Assets/BirdBot.cs" />
+        <option value="$PROJECT_DIR$/Assets/ObjectiveUnlocker.cs" />
+        <option value="$PROJECT_DIR$/Assets/FPS/Scripts/JetpackPickup.cs" />
+        <option value="$PROJECT_DIR$/Assets/JumpUpgradePickup.cs" />
+        <option value="$PROJECT_DIR$/Assets/Bush.cs" />
+        <option value="$PROJECT_DIR$/Assets/02_Student Folders/ArwenHutzezon_Assets/Scripts/CompanionBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/02_Student Folders/ArwenHutzezon_Assets/Scripts/FallenThroughWater.cs" />
       </list>
     </option>
   </component>
@@ -110,6 +117,8 @@
       <workItem from="1603215758350" duration="18614000" />
       <workItem from="1603250054976" duration="9439000" />
       <workItem from="1603260419389" duration="17722000" />
+      <workItem from="1603293556435" duration="734000" />
+      <workItem from="1603297164102" duration="1675000" />
     </task>
     <servers />
   </component>
@@ -138,5 +147,9 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1603264300793" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1603293630895">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1603293630895" />
   </component>
 </project>

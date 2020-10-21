@@ -27,6 +27,7 @@
             <e p="README.txt" t="Include" />
           </e>
         </e>
+        <e p="Bush.cs" t="Include" />
         <e p="FPS" t="Include">
           <e p="Art" t="Include">
             <e p="Fonts" t="Include">
@@ -153,6 +154,7 @@
           </e>
         </e>
         <e p="JumpPad.cs" t="Include" />
+        <e p="JumpUpgradePickup.cs" t="Include" />
         <e p="ObjectiveUnlocker.cs" t="Include" />
         <e p="SecretPassage.cs" t="Include" />
         <e p="TestScript.cs" t="Include" />

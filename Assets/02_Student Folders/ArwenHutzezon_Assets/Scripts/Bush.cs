@@ -3,14 +3,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FallenThroughWater : MonoBehaviour
+public class Bush : MonoBehaviour
 {
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player"))
+        if (other.GetComponent<CompanionBehaviour>())
         {
-            Health health = other.GetComponent<Health>();
-            health.Kill();
+            Destroy(gameObject);
         }
     }
 }

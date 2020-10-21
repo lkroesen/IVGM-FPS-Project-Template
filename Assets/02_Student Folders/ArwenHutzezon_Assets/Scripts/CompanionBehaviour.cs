@@ -71,7 +71,7 @@ public class CompanionBehaviour : MonoBehaviour
         if (playerWatchData)
         {
             (GameObject hit, Transform potentialTarget, float touchDistance) = playerWatchData.GetRaycast();
-            if (hit.GetComponent<ObjectiveCompanionReachPoint>())
+            if (hit.GetComponent<ObjectiveCompanionReachPoint>() || hit.GetComponent<Bush>())
             {
                 _currentTarget = potentialTarget;
                 _interactionDistance = touchDistance;
