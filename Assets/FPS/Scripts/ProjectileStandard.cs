@@ -44,6 +44,8 @@ public class ProjectileStandard : MonoBehaviour
     [Tooltip("Color of the projectile radius debug view")]
     public Color radiusColor = Color.cyan * 0.2f;
 
+    [SerializeField] private bool _notFromEnemy = true;
+
     ProjectileBase m_ProjectileBase;
     Vector3 m_LastRootPosition;
     Vector3 m_Velocity;
@@ -256,6 +258,16 @@ public class ProjectileStandard : MonoBehaviour
             if (damageable)
             {
                 damageable.InflictDamage(damage, false, m_ProjectileBase.owner);
+            }
+            
+            // turn light on
+            CrystalLight crystalLight = collider.GetComponent<CrystalLight>();
+            if (crystalLight && _notFromEnemy)
+            {
+                if (crystalLight.IsToggleLaser())
+                {
+                    crystalLight.LightOn();
+                }
             }
         }
 
