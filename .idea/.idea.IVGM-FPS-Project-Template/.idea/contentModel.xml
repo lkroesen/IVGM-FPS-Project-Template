@@ -15,7 +15,10 @@
           <e p="ArwenHutzezon_Assets" t="Include">
             <e p="Scripts" t="Include">
               <e p="CompanionBehaviour.cs" t="Include" />
+              <e p="Destructable.cs" t="Include" />
               <e p="FallenThroughWater.cs" t="Include" />
+              <e p="ObjectiveCompanionReachPoint.cs" t="Include" />
+              <e p="PlayerWatchData.cs" t="Include" />
             </e>
           </e>
         </e>
@@ -24,6 +27,7 @@
             <e p="README.txt" t="Include" />
           </e>
         </e>
+        <e p="CompanionManager.cs" t="Include" />
         <e p="FPS" t="Include">
           <e p="Art" t="Include">
             <e p="Fonts" t="Include">
@@ -57,7 +61,6 @@
             <e p="Damageable.cs" t="Include" />
             <e p="DamageArea.cs" t="Include" />
             <e p="DebugUtility.cs" t="Include" />
-            <e p="Destructable.cs" t="Include" />
             <e p="DetectionModule.cs" t="Include" />
             <e p="Editor" t="Include">
               <e p="MiniProfiler.cs" t="Include" />
@@ -150,6 +153,9 @@
           </e>
         </e>
         <e p="JumpPad.cs" t="Include" />
+        <e p="ObjectiveUnlocker.cs" t="Include" />
+        <e p="SecretPassage.cs" t="Include" />
+        <e p="TestScript.cs" t="Include" />
         <e p="TextMesh Pro" t="Include">
           <e p="Fonts" t="Include">
             <e p="LiberationSans - OFL.txt" t="Include" />
