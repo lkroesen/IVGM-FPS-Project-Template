@@ -21,6 +21,7 @@
             </e>
           </e>
         </e>
+        <e p="BirdBot.cs" t="Include" />
         <e p="BrokenVector" t="Include">
           <e p="LowPolyTreePack" t="Include">
             <e p="README.txt" t="Include" />

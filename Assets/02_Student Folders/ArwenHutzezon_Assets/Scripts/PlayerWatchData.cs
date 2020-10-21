@@ -19,7 +19,7 @@ public class PlayerWatchData : MonoBehaviour
         // Does the ray intersect any objects excluding the player layer
         if (Physics.Raycast(transform.position, transform.forward, out hit, Mathf.Infinity))
         {
-            Debug.DrawRay(transform.position, transform.forward * hit.distance);
+            Debug.DrawRay(transform.position, transform.forward * hit.distance, Color.red);
             return (hit.collider.gameObject, hit.transform, 0);
         }
 
