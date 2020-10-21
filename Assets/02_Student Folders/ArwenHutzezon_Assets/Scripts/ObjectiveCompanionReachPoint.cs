@@ -26,7 +26,8 @@ public class ObjectiveCompanionReachPoint : MonoBehaviour
         if (m_Objective.isCompleted)
             return;
 
-        var companion = other.GetComponent<CompanionBehaviour>();
+        CompanionBehaviour companion = other.GetComponent<CompanionBehaviour>();
+        Debug.Log(companion);
         // test if the other collider contains a PlayerCharacterController, then complete
         if (companion != null && companion.GetPackLeader().CompareTag("Player"))
         {

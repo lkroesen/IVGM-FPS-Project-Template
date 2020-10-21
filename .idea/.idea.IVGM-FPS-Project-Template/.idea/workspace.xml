@@ -54,7 +54,6 @@
     <setting file="file://$PROJECT_DIR$/Assets/ObjectiveUnlocker.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/JumpPad.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/SecretPassage.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/CompanionManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/02_Student Folders/ArwenHutzezon_Assets/Scripts/PlayerWatchData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/02_Student Folders/ArwenHutzezon_Assets/Scripts/ObjectiveCompanionReachPoint.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -69,11 +68,11 @@
         <option value="$PROJECT_DIR$/Assets/FPS/Scripts/WeaponController.cs" />
         <option value="$PROJECT_DIR$/Assets/TestScript.cs" />
         <option value="$PROJECT_DIR$/Assets/02_Student Folders/ArwenHutzezon_Assets/Scripts/PlayerWatchData.cs" />
-        <option value="$PROJECT_DIR$/Assets/02_Student Folders/ArwenHutzezon_Assets/Scripts/CompanionBehaviour.cs" />
-        <option value="$PROJECT_DIR$/Assets/02_Student Folders/ArwenHutzezon_Assets/Scripts/ObjectiveCompanionReachPoint.cs" />
         <option value="$PROJECT_DIR$/Assets/ObjectiveUnlocker.cs" />
         <option value="$PROJECT_DIR$/Assets/SecretPassage.cs" />
         <option value="$PROJECT_DIR$/Assets/CompanionManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/02_Student Folders/ArwenHutzezon_Assets/Scripts/ObjectiveCompanionReachPoint.cs" />
+        <option value="$PROJECT_DIR$/Assets/02_Student Folders/ArwenHutzezon_Assets/Scripts/CompanionBehaviour.cs" />
       </list>
     </option>
   </component>
@@ -119,7 +118,7 @@
       <workItem from="1603127513165" duration="711000" />
       <workItem from="1603215758350" duration="18614000" />
       <workItem from="1603250054976" duration="9439000" />
-      <workItem from="1603260419389" duration="7330000" />
+      <workItem from="1603260419389" duration="10851000" />
     </task>
     <servers />
   </component>

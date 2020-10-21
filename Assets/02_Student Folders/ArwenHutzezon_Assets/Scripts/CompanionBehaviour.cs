@@ -41,7 +41,7 @@ public class CompanionBehaviour : MonoBehaviour
         }
         
         else if (_petState == PetState.Targeted)
-        {
+        { 
             Move(_currentTarget, _interactionDistance);
         }
     }
@@ -76,6 +76,7 @@ public class CompanionBehaviour : MonoBehaviour
                 Debug.Log(hit.transform);
                 _currentTarget = potentialTarget;
                 _interactionDistance = touchDistance;
+                Move(potentialTarget, touchDistance);
                 return;
             }
 
